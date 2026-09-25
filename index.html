@@ -50,7 +50,7 @@
       position:sticky;
       top:0;
       z-index:50;
-      background:rgba(11,7,5,.9);
+      background:rgba(11,7,5,.92);
       backdrop-filter:blur(15px);
       border-bottom:1px solid var(--line);
     }
@@ -173,7 +173,7 @@
       display:grid;
       grid-template-columns:1.15fr .85fr;
       gap:35px;
-      align-items:stretch;
+      align-items:start;
     }
 
     .project-visual{
@@ -237,6 +237,40 @@
       border-radius:999px;
       color:var(--muted);
       font-size:12px;
+    }
+
+    /* QR */
+
+    .qr-section{
+      margin-top:35px;
+      padding-top:30px;
+      border-top:1px solid var(--line);
+    }
+
+    .qr-label{
+      color:var(--bronze);
+      font-size:12px;
+      margin-bottom:14px;
+    }
+
+    .qr-box{
+      width:210px;
+      max-width:100%;
+      background:#f4ebdc;
+      padding:8px;
+      border-radius:16px;
+    }
+
+    .qr-box img{
+      width:100%;
+      display:block;
+      border-radius:10px;
+    }
+
+    .qr-text{
+      color:var(--muted);
+      font-size:12px;
+      margin-top:10px;
     }
 
     .services{
@@ -422,6 +456,10 @@
       .project-visual img{
         min-height:330px;
       }
+
+      .qr-box{
+        width:190px;
+      }
     }
   </style>
 </head>
@@ -430,6 +468,7 @@
 
 <header>
   <div class="container">
+
     <nav>
 
       <a href="#" class="logo">
@@ -443,254 +482,326 @@
       </div>
 
     </nav>
+
   </div>
 </header>
 
 
 <main>
 
-<!-- HERO -->
+  <!-- HERO -->
 
-<section class="hero">
+  <section class="hero">
 
-  <div class="container">
+    <div class="container">
 
-    <div class="eyebrow">
-      CIRCLE01 · DIGITAL DESIGN & WEB
-    </div>
+      <div class="eyebrow">
+        CIRCLE01 · DIGITAL DESIGN & WEB
+      </div>
 
-    <h1>
-      أصمم مواقع ومنيو رقمية.<br>
-      <span>وأحوّل الأفكار إلى تجربة.</span>
-    </h1>
+      <h1>
+        أصمم مواقع ومنيو رقمية.<br>
+        <span>وأحوّل الأفكار إلى تجربة.</span>
+      </h1>
 
-    <p class="hero-text">
-      تصميم مواقع، منيو رقمية، QR وتجارب بصرية للمطاعم والمشاريع التجارية.
-      أعمل على تحويل فكرة المشروع إلى حضور رقمي واضح واحترافي.
-    </p>
+      <p class="hero-text">
+        تصميم مواقع، منيو رقمية، QR وتجارب بصرية للمطاعم والمشاريع التجارية.
+        أعمل على تحويل فكرة المشروع إلى حضور رقمي واضح واحترافي.
+      </p>
 
-    <div class="buttons">
+      <div class="buttons">
 
-      <a href="#projects" class="btn btn-primary">
-        مشاهدة الأعمال ↓
-      </a>
+        <a href="#projects" class="btn btn-primary">
+          مشاهدة الأعمال ↓
+        </a>
 
-      <a href="#contact" class="btn">
-        تواصل معي
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- PROJECTS -->
-
-<section id="projects">
-
-  <div class="container">
-
-    <div class="section-label">
-      01 · PROJECT
-    </div>
-
-    <h2 class="section-title">
-      أعمال مختارة
-    </h2>
-
-    <div class="project">
-
-      <!-- REAL KALD IMAGE -->
-
-      <div class="project-visual">
-
-        <img
-          src="IMG_1915.jpeg"
-          alt="KALD CAFFE Digital Menu"
-        >
+        <a href="#contact" class="btn">
+          تواصل معي
+        </a>
 
       </div>
 
+    </div>
 
-      <div class="project-info">
+  </section>
 
-        <div class="project-number">
-          01 / 01
-        </div>
 
-        <h3>
-          KALD CAFFE
-        </h3>
+  <!-- PROJECT -->
 
-        <div class="project-type">
-          Digital Menu
-        </div>
+  <section id="projects">
 
-        <p>
-          تصميم منيو رقمية متجاوبة للموبايل والكمبيوتر،
-          بهوية Swiss / Minimal مع دعم اللغة العربية والإنجليزية
-          ونظام QR للوصول السريع إلى القائمة.
-        </p>
+    <div class="container">
 
-        <div class="tags">
+      <div class="section-label">
+        01 · PROJECT
+      </div>
 
-          <span class="tag">Web Design</span>
-          <span class="tag">Digital Menu</span>
-          <span class="tag">QR Menu</span>
-          <span class="tag">Responsive</span>
+      <h2 class="section-title">
+        أعمال مختارة
+      </h2>
+
+      <div class="project">
+
+        <!-- KALD IMAGE -->
+
+        <div class="project-visual">
+
+          <img
+            src="IMG_1915.jpeg"
+            alt="KALD CAFFE Digital Menu"
+          >
 
         </div>
 
-        <a
-          class="btn btn-primary"
-          href="https://cercle01.github.io/kald-caffe-menu/"
-          target="_blank"
-          rel="noopener"
-        >
-          مشاهدة المشروع ↗
-        </a>
 
-      </div>
+        <!-- PROJECT INFO -->
 
-    </div>
+        <div class="project-info">
 
-  </div>
+          <div class="project-number">
+            01 / 01
+          </div>
 
-</section>
+          <h3>
+            KALD CAFFE
+          </h3>
 
+          <div class="project-type">
+            Digital Menu
+          </div>
 
-<!-- SERVICES -->
+          <p>
+            تصميم منيو رقمية متجاوبة للموبايل والكمبيوتر،
+            بهوية Swiss / Minimal مع دعم اللغة العربية والإنجليزية
+            ونظام QR للوصول السريع إلى القائمة.
+          </p>
 
-<section id="services">
+          <div class="tags">
 
-  <div class="container">
+            <span class="tag">Web Design</span>
+            <span class="tag">Digital Menu</span>
+            <span class="tag">QR Menu</span>
+            <span class="tag">Responsive</span>
 
-    <div class="section-label">
-      02 · SERVICES
-    </div>
-
-    <h2 class="section-title">
-      شنو أقدم؟
-    </h2>
-
-    <div class="services">
-
-      <div class="service">
-        <div class="service-number">01</div>
-        <h3>Digital Menus</h3>
-        <p>
-          منيو رقمية سريعة ومتجاوبة للمطاعم والكافيهات.
-        </p>
-      </div>
-
-      <div class="service">
-        <div class="service-number">02</div>
-        <h3>Website Design</h3>
-        <p>
-          تصميم مواقع بسيطة وحديثة للمشاريع التجارية.
-        </p>
-      </div>
-
-      <div class="service">
-        <div class="service-number">03</div>
-        <h3>QR Menu</h3>
-        <p>
-          تصميم QR وربطه بالمنيو الرقمية.
-        </p>
-      </div>
-
-      <div class="service">
-        <div class="service-number">04</div>
-        <h3>Product Design</h3>
-        <p>
-          تصميم صور وإعلانات المنتجات للسوشيال ميديا.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+          </div>
 
 
-<!-- CONTACT -->
+          <div class="buttons">
 
-<section class="contact" id="contact">
+            <a
+              class="btn btn-primary"
+              href="https://cercle01.github.io/kald-caffe-menu/"
+              target="_blank"
+              rel="noopener"
+            >
+              مشاهدة المشروع ↗
+            </a>
 
-  <div class="container">
+          </div>
 
-    <div class="contact-box">
 
-      <div>
+          <!-- QR -->
 
-        <div class="section-label">
-          03 · CONTACT
+          <div class="qr-section">
+
+            <div class="qr-label">
+              KALD CAFFE · QR MENU
+            </div>
+
+            <div class="qr-box">
+
+              <img
+                src="kald-qr.png"
+                alt="KALD CAFFE QR Menu"
+              >
+
+            </div>
+
+            <p class="qr-text">
+              امسح الكود لفتح المنيو الرقمية.
+            </p>
+
+          </div>
+
         </div>
 
-        <h2 class="contact-title">
-          عندك مشروع؟<br>
-          <span>خلينا نسويه رقمي.</span>
-        </h2>
-
-        <p class="contact-info">
-          متاح لتصميم المنيو الرقمية والمواقع للمطاعم والمشاريع التجارية.
-          تواصل وياي مباشرة من خلال إحدى الطرق التالية.
-        </p>
-
       </div>
 
+    </div>
 
-      <div class="contact-links">
+  </section>
 
-        <a
-          class="contact-link"
-          href="https://wa.me/9647735805307"
-          target="_blank"
-          rel="noopener"
-        >
-          <span>WhatsApp</span>
-          <span>+964 773 580 5307 ↗</span>
-        </a>
 
-        <a
-          class="contact-link"
-          href="https://instagram.com/hm.wdi"
-          target="_blank"
-          rel="noopener"
-        >
-          <span>Instagram</span>
-          <span>@hm.wdi ↗</span>
-        </a>
+  <!-- SERVICES -->
 
-        <a
-          class="contact-link"
-          href="mailto:77sss77sss77@gmail.com"
-        >
-          <span>Email</span>
-          <span>77sss77sss77@gmail.com ↗</span>
-        </a>
+  <section id="services">
 
-        <a
-          class="contact-link"
-          href="tel:+9647735805307"
-        >
-          <span>Phone</span>
-          <span>+964 773 580 5307 ↗</span>
-        </a>
+    <div class="container">
+
+      <div class="section-label">
+        02 · SERVICES
+      </div>
+
+      <h2 class="section-title">
+        شنو أقدم؟
+      </h2>
+
+      <div class="services">
+
+        <div class="service">
+
+          <div class="service-number">
+            01
+          </div>
+
+          <h3>
+            Digital Menus
+          </h3>
+
+          <p>
+            منيو رقمية سريعة ومتجاوبة للمطاعم والكافيهات.
+          </p>
+
+        </div>
+
+
+        <div class="service">
+
+          <div class="service-number">
+            02
+          </div>
+
+          <h3>
+            Website Design
+          </h3>
+
+          <p>
+            تصميم مواقع بسيطة وحديثة للمشاريع التجارية.
+          </p>
+
+        </div>
+
+
+        <div class="service">
+
+          <div class="service-number">
+            03
+          </div>
+
+          <h3>
+            QR Menu
+          </h3>
+
+          <p>
+            تصميم QR وربطه بالمنيو الرقمية.
+          </p>
+
+        </div>
+
+
+        <div class="service">
+
+          <div class="service-number">
+            04
+          </div>
+
+          <h3>
+            Product Design
+          </h3>
+
+          <p>
+            تصميم صور وإعلانات المنتجات للسوشيال ميديا.
+          </p>
+
+        </div>
 
       </div>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
+
+  <!-- CONTACT -->
+
+  <section class="contact" id="contact">
+
+    <div class="container">
+
+      <div class="contact-box">
+
+        <div>
+
+          <div class="section-label">
+            03 · CONTACT
+          </div>
+
+          <h2 class="contact-title">
+            عندك مشروع؟<br>
+            <span>خلينا نسويه رقمي.</span>
+          </h2>
+
+          <p class="contact-info">
+            متاح لتصميم المنيو الرقمية والمواقع للمطاعم والمشاريع التجارية.
+            تواصل وياي مباشرة من خلال إحدى الطرق التالية.
+          </p>
+
+        </div>
+
+
+        <div class="contact-links">
+
+          <a
+            class="contact-link"
+            href="https://wa.me/9647735805307"
+            target="_blank"
+            rel="noopener"
+          >
+            <span>WhatsApp</span>
+            <span>+964 773 580 5307 ↗</span>
+          </a>
+
+
+          <a
+            class="contact-link"
+            href="https://instagram.com/hm.wdi"
+            target="_blank"
+            rel="noopener"
+          >
+            <span>Instagram</span>
+            <span>@hm.wdi ↗</span>
+          </a>
+
+
+          <a
+            class="contact-link"
+            href="mailto:77sss77sss77@gmail.com"
+          >
+            <span>Email</span>
+            <span>77sss77sss77@gmail.com ↗</span>
+          </a>
+
+
+          <a
+            class="contact-link"
+            href="tel:+9647735805307"
+          >
+            <span>Phone</span>
+            <span>+964 773 580 5307 ↗</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
 
 </main>
 
+
+<!-- FOOTER -->
 
 <footer>
 
