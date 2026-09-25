@@ -46,8 +46,6 @@ a{
   margin:auto;
 }
 
-/* HEADER */
-
 header{
   position:sticky;
   top:0;
@@ -90,8 +88,6 @@ nav{
   color:var(--text);
   background:rgba(255,255,255,.04);
 }
-
-/* HERO */
 
 .hero{
   min-height:calc(100vh - 76px);
@@ -153,7 +149,13 @@ h1 span{
   border-color:var(--text);
 }
 
-/* SECTIONS */
+.btn-whatsapp{
+  border-color:#3c7b51;
+}
+
+.btn-instagram{
+  border-color:#8b5a78;
+}
 
 section{
   padding:100px 0;
@@ -172,8 +174,6 @@ section{
   line-height:1.05;
   margin-bottom:45px;
 }
-
-/* CASE STUDY */
 
 .case-study{
   display:grid;
@@ -237,8 +237,6 @@ section{
   font-size:12px;
 }
 
-/* QR */
-
 .qr-area{
   margin-top:35px;
   padding-top:30px;
@@ -269,8 +267,6 @@ section{
   font-size:12px;
   margin-top:10px;
 }
-
-/* DETAILS */
 
 .details{
   display:grid;
@@ -303,8 +299,6 @@ section{
   margin-top:6px;
 }
 
-/* SERVICES */
-
 .services{
   display:grid;
   grid-template-columns:repeat(4,1fr);
@@ -334,8 +328,6 @@ section{
   font-size:13px;
   margin-top:8px;
 }
-
-/* CONTACT */
 
 .contact{
   background:var(--surface);
@@ -387,8 +379,6 @@ section{
   direction:ltr;
 }
 
-/* FOOTER */
-
 footer{
   padding:25px 0;
   color:#71685f;
@@ -400,8 +390,6 @@ footer{
   justify-content:space-between;
   gap:20px;
 }
-
-/* MOBILE */
 
 @media(max-width:800px){
 
@@ -537,6 +525,24 @@ footer{
         تواصل معي
       </a>
 
+      <a
+        href="https://wa.me/9647735805307"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-whatsapp"
+      >
+        WhatsApp ↗
+      </a>
+
+      <a
+        href="https://instagram.com/hm.wdi"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-instagram"
+      >
+        Instagram ↗
+      </a>
+
     </div>
 
   </div>
@@ -558,10 +564,7 @@ footer{
       KALD CAFFE
     </h2>
 
-
     <div class="case-study">
-
-      <!-- REAL PROJECT IMAGE -->
 
       <div class="case-image">
 
@@ -571,9 +574,6 @@ footer{
         >
 
       </div>
-
-
-      <!-- PROJECT INFO -->
 
       <div class="case-info">
 
@@ -605,7 +605,6 @@ footer{
 
         </div>
 
-
         <div class="buttons">
 
           <a
@@ -618,9 +617,6 @@ footer{
           </a>
 
         </div>
-
-
-        <!-- QR -->
 
         <div class="qr-area">
 
@@ -648,8 +644,6 @@ footer{
     </div>
 
 
-    <!-- PROJECT DETAILS -->
-
     <div class="details">
 
       <div class="detail">
@@ -668,7 +662,6 @@ footer{
 
       </div>
 
-
       <div class="detail">
 
         <div class="detail-number">
@@ -684,7 +677,6 @@ footer{
         </p>
 
       </div>
-
 
       <div class="detail">
 
@@ -726,70 +718,35 @@ footer{
     <div class="services">
 
       <div class="service">
-
-        <div class="service-number">
-          01
-        </div>
-
-        <h3>
-          Digital Menus
-        </h3>
-
+        <div class="service-number">01</div>
+        <h3>Digital Menus</h3>
         <p>
           منيو رقمية سريعة ومتجاوبة للمطاعم والكافيهات.
         </p>
-
       </div>
 
-
       <div class="service">
-
-        <div class="service-number">
-          02
-        </div>
-
-        <h3>
-          Website Design
-        </h3>
-
+        <div class="service-number">02</div>
+        <h3>Website Design</h3>
         <p>
           تصميم مواقع حديثة وبسيطة للمشاريع التجارية.
         </p>
-
       </div>
 
-
       <div class="service">
-
-        <div class="service-number">
-          03
-        </div>
-
-        <h3>
-          QR Menu
-        </h3>
-
+        <div class="service-number">03</div>
+        <h3>QR Menu</h3>
         <p>
           تصميم وربط QR بالمنيو الرقمية.
         </p>
-
       </div>
 
-
       <div class="service">
-
-        <div class="service-number">
-          04
-        </div>
-
-        <h3>
-          Product Design
-        </h3>
-
+        <div class="service-number">04</div>
+        <h3>Product Design</h3>
         <p>
           تصميم صور وإعلانات المنتجات للسوشيال ميديا.
         </p>
-
       </div>
 
     </div>
@@ -824,7 +781,6 @@ footer{
 
       </div>
 
-
       <div class="contact-links">
 
         <a
@@ -837,7 +793,6 @@ footer{
           <span>+964 773 580 5307 ↗</span>
         </a>
 
-
         <a
           class="contact-link"
           href="https://instagram.com/hm.wdi"
@@ -848,7 +803,6 @@ footer{
           <span>@hm.wdi ↗</span>
         </a>
 
-
         <a
           class="contact-link"
           href="mailto:77sss77sss77@gmail.com"
@@ -856,7 +810,6 @@ footer{
           <span>Email</span>
           <span>77sss77sss77@gmail.com ↗</span>
         </a>
-
 
         <a
           class="contact-link"
