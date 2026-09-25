@@ -180,43 +180,22 @@
       min-height:430px;
       border:1px solid var(--line);
       border-radius:24px;
-      background:
-        linear-gradient(
-          135deg,
-          #f4ebdc 0%,
-          #d48d43 45%,
-          #0b0705 100%
-        );
-      padding:30px;
+      background:#f4ebdc;
+      padding:18px;
       display:flex;
-      align-items:end;
+      align-items:center;
+      justify-content:center;
       overflow:hidden;
     }
 
-    .mockup{
+    .project-visual img{
       width:100%;
-      background:#0b0705;
+      height:100%;
+      min-height:430px;
+      object-fit:cover;
+      object-position:top center;
       border-radius:18px;
-      padding:25px;
-      box-shadow:0 25px 60px rgba(0,0,0,.35);
-    }
-
-    .mockup-top{
-      display:flex;
-      justify-content:space-between;
-      color:#f4ebdc;
-      font-size:12px;
-      margin-bottom:55px;
-    }
-
-    .mockup-title{
-      font-size:clamp(35px,5vw,65px);
-      line-height:1;
-      font-weight:800;
-    }
-
-    .mockup-title span{
-      color:#d48d43;
+      display:block;
     }
 
     .project-info{
@@ -320,7 +299,7 @@
     .contact-links{
       display:grid;
       gap:10px;
-      min-width:220px;
+      min-width:260px;
     }
 
     .contact-link{
@@ -390,7 +369,11 @@
       }
 
       .project-visual{
-        min-height:300px;
+        min-height:350px;
+      }
+
+      .project-visual img{
+        min-height:350px;
       }
 
       .services{
@@ -430,6 +413,14 @@
 
       .contact-title{
         font-size:40px;
+      }
+
+      .project-visual{
+        padding:10px;
+      }
+
+      .project-visual img{
+        min-height:330px;
       }
     }
   </style>
@@ -511,21 +502,14 @@
 
     <div class="project">
 
+      <!-- REAL KALD IMAGE -->
+
       <div class="project-visual">
 
-        <div class="mockup">
-
-          <div class="mockup-top">
-            <span>KALD CAFFE</span>
-            <span>DIGITAL MENU</span>
-          </div>
-
-          <div class="mockup-title">
-            قهوة بهدوء.<br>
-            <span>مزاج أفضل.</span>
-          </div>
-
-        </div>
+        <img
+          src="IMG_1915.jpeg"
+          alt="KALD CAFFE Digital Menu"
+        >
 
       </div>
 
@@ -563,6 +547,7 @@
           class="btn btn-primary"
           href="https://cercle01.github.io/kald-caffe-menu/"
           target="_blank"
+          rel="noopener"
         >
           مشاهدة المشروع ↗
         </a>
@@ -593,70 +578,35 @@
     <div class="services">
 
       <div class="service">
-
-        <div class="service-number">
-          01
-        </div>
-
-        <h3>
-          Digital Menus
-        </h3>
-
+        <div class="service-number">01</div>
+        <h3>Digital Menus</h3>
         <p>
           منيو رقمية سريعة ومتجاوبة للمطاعم والكافيهات.
         </p>
-
       </div>
 
-
       <div class="service">
-
-        <div class="service-number">
-          02
-        </div>
-
-        <h3>
-          Website Design
-        </h3>
-
+        <div class="service-number">02</div>
+        <h3>Website Design</h3>
         <p>
           تصميم مواقع بسيطة وحديثة للمشاريع التجارية.
         </p>
-
       </div>
 
-
       <div class="service">
-
-        <div class="service-number">
-          03
-        </div>
-
-        <h3>
-          QR Menu
-        </h3>
-
+        <div class="service-number">03</div>
+        <h3>QR Menu</h3>
         <p>
           تصميم QR وربطه بالمنيو الرقمية.
         </p>
-
       </div>
 
-
       <div class="service">
-
-        <div class="service-number">
-          04
-        </div>
-
-        <h3>
-          Product Design
-        </h3>
-
+        <div class="service-number">04</div>
+        <h3>Product Design</h3>
         <p>
           تصميم صور وإعلانات المنتجات للسوشيال ميديا.
         </p>
-
       </div>
 
     </div>
@@ -695,8 +645,6 @@
 
       <div class="contact-links">
 
-        <!-- WhatsApp -->
-
         <a
           class="contact-link"
           href="https://wa.me/9647735805307"
@@ -706,9 +654,6 @@
           <span>WhatsApp</span>
           <span>+964 773 580 5307 ↗</span>
         </a>
-
-
-        <!-- Instagram -->
 
         <a
           class="contact-link"
@@ -720,9 +665,6 @@
           <span>@hm.wdi ↗</span>
         </a>
 
-
-        <!-- Email -->
-
         <a
           class="contact-link"
           href="mailto:77sss77sss77@gmail.com"
@@ -730,9 +672,6 @@
           <span>Email</span>
           <span>77sss77sss77@gmail.com ↗</span>
         </a>
-
-
-        <!-- Phone -->
 
         <a
           class="contact-link"
@@ -753,8 +692,6 @@
 </main>
 
 
-<!-- FOOTER -->
-
 <footer>
 
   <div class="container">
@@ -774,7 +711,6 @@
   </div>
 
 </footer>
-
 
 </body>
 </html>
